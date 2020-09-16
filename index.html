@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+      <a class="navbar-brand"><img src="./img/Logo2.png" style="width: 26%;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#main-menu" aria-controls="main-menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link"><i class="fas fa-home"></i></a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">Libros</a>
+            
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide"
+      data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0"
+          class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner heigh-carousel">
+        <div class="carousel-item active heigh-carousel">
+          <img src="./img/foto1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black;">First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item heigh-carousel">
+          <img src="./img/foto2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black;">Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item heigh-carousel">
+          <img src="./img/foto3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black;">Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions"
+        role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions"
+        role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!--Slaider-->
+    <!--Lista libro-->
+
+    <div class="container mt-5">
+      <h1 class="text-center mb-5 border-botton border-sucess">Los más venidos</h1>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="./img/rosa" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">CIEN AÑOS DE SOLEDAD</h4>
+              <p class="card-text text-justify">Cien años de soledad es una
+                novela del escritor colombiano
+                Gabriel García Márquez, ganador del Premio Nobel de Literatura
+                en 1982.</p>
+
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item"><b>Género:</b>Novela</li>
+              <li class="list-group-item"><b>Idioma:</b>Español</li>
+            </ul>
+
+            <div class="card-body">
+              <a class="card-link btn btn-primary">Ver libro</a>
+              <a class="card-link">Comprar libro</a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card">
+            <img src="./img/mortality.jpg" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">DIARIO DEL FIN DEL MUNDO</h4>
+              <p class="card-text text-justify">El escritor Mario Mendoza recibe
+                un mensaje de un viejo amigo de universidad: Daniel Klein. Entre
+                ambos evocarán una juventud impetuosa en la cual compartieron el
+                amor de una misma mujer:</p>
+
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item"><b>Género:</b>Novela</li>
+              <li class="list-group-item"><b>Idioma:</b>Español</li>
+            </ul>
+
+            <div class="card-body">
+              <a class="card-link btn btn-danger">Ver libro</a>
+              <a class="card-link">Comprar libro</a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/book.jpg" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">LA MELANCOLIA DE LOS FEOS</h4>
+              <p class="card-text text-justify">León Soler es un psiquiatra
+                soltero y sin hijos que se acerca a los cuarenta años y sigue
+                atrapado en una rutina poco feliz y carente de brillo. Vive
+                apenas obsesionado con su profesión, hasta que una mañana recibe
+                una extraña carta en su consultorio</p>
+
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item"><b>Género:</b>Novela</li>
+              <li class="list-group-item"><b>Idioma:</b>Español</li>
+            </ul>
+
+            <div class="card-body">
+              <a class="card-link btn btn-primary">Ver libro</a>
+              <a class="card-link">Comprar libro</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--fin lista libros-->
+
+    <!--Footer-->
+
+    <footer>
+      <div class="container-fluid border-top">
+        <div class="row"> 
+          <div class="col-4 align-self-center text-center">
+
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+
+
+          </div>
+
+
+          <div class="col align-self-center text-center">
+            <img src="./img/Logo2.png" style="width: 66%;">
+          </div>
+          <div class="col"></div>
+        
+        <div class="col-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15905.640430427122!2d-74.1592163!3d4.6985972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1600209483936!5m2!1ses!2sco"
+          frameborder="0" style="border:0; width: 100%;"
+          allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/437f265f51.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
